@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="504f0fd0-ccff-4ec4-9fe1-3e703f62556f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/LifeBeing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data1/PokeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data1/Pokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data2/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data2/IActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data2/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data2/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data3/IRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Classes/data3/RenderType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/LifeBeing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Classes/data1/LifeBeing.java" afterDir="false" />
     </list>
     <list id="c4f6dda2-322f-40ee-a457-ea488f375028" name="feature LifeBeing" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -26,20 +36,28 @@
   </component>
   <component name="ProjectId" id="1oRKZl0IL0lZ4NgcC8Fw4Y79y3o" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PokemonGP" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,6 +81,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
