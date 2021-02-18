@@ -1,4 +1,34 @@
 package unittesting.Classes.data2;
 
+import unittesting.Classes.data1.Pokemon;
+
 public class UserAction {
+    private Pokemon pokemon;
+    private Integer currentXp;
+    private Integer newXp;
+
+    public Pokemon getPokemon() {
+        return pokemon;
+    }
+
+    public void setPokemon(Pokemon pokemon) {
+        this.pokemon = pokemon;
+    }
+
+    public Integer getCurrentXp() {
+        return currentXp;
+    }
+
+    public void setCurrentXp(Integer currentXp) {
+        this.currentXp = currentXp;
+    }
+
+    public Integer getNewXp() {
+        return newXp;
+    }
+
+    public void setNewXp(Integer newXp) {
+        this.newXp = newXp;
+    }
 }
+
