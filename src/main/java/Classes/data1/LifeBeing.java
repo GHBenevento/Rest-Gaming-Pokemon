@@ -1,6 +1,7 @@
 package Classes.data1;
 
 import Classes.data2.IActions;
+import Classes.data2.Status;
 import Classes.data3.IRender;
 
 public abstract class LifeBeing implements IActions, IRender {
@@ -9,10 +10,9 @@ public abstract class LifeBeing implements IActions, IRender {
     private Double weight;
     private Gender gender;
     private Integer level;
+    private Status stats;
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
@@ -49,4 +49,9 @@ public abstract class LifeBeing implements IActions, IRender {
     public void setLevel(Integer level) {
         this.level = level;
     }
+
+    public Status getStats() {return stats; }
+
+    public void setStats(Status stats) { this.stats = stats; }
+
 }
