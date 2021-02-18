@@ -1,6 +1,9 @@
 package Classes.data1;
 
-public abstract class LifeBeing {
+import Classes.data2.IActions;
+import Classes.data3.IRender;
+
+public abstract class LifeBeing implements IActions, IRender {
     private String name;
     private Double height;
     private Double weight;
