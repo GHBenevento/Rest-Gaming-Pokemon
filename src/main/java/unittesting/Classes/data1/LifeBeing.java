@@ -1,8 +1,8 @@
 package unittesting.Classes.data1;
 
-import Classes.data2.IActions;
-import Classes.data2.Status;
-import Classes.data3.IRender;
+import unittesting.Classes.data2.IActions;
+import unittesting.Classes.data2.Status;
+import unittesting.Classes.data3.IRender;
 
 public abstract class LifeBeing implements IActions, IRender {
     private String name;
@@ -10,7 +10,7 @@ public abstract class LifeBeing implements IActions, IRender {
     private Double weight;
     private Gender gender;
     private Integer level;
-    private Status stats;
+    private Status status;
 
     public String getName() { return name; }
 
@@ -50,8 +50,8 @@ public abstract class LifeBeing implements IActions, IRender {
         this.level = level;
     }
 
-    public Status getStats() {return stats; }
+    public Status getStatus() {return status; }
 
-    public void setStats(Status stats) { this.stats = stats; }
+    public void setStatus(Status stats) { this.status = stats; }
 
 }
