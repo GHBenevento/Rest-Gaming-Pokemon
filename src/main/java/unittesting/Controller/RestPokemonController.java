@@ -13,8 +13,8 @@ import java.util.List;
 public class RestPokemonController {
 
 
-    @GetMapping("/rest/do/{action}")
-    public Pokemon doAction(@RequestParam(value = "name", defaultValue = "Charmander") String name) {
+  /*  @GetMapping("/rest/do/{action}")
+    public Pokemon IAction.doAction(@RequestParam(value = "name", defaultValue = "Charmander") String name) {
         return "JSON";
     }
     @GetMapping("/rest/getCurrentStatus}")
@@ -35,8 +35,8 @@ public class RestPokemonController {
     }
     @GetMapping("/rest/getActions")
     public List<IActions> getActions(@RequestParam(value = "name", defaultValue = "Charmander") String name) {
-        List iActions = new LinkedList();
+
         return iActions;
     }
-
+*/
 }
