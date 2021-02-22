@@ -9,8 +9,6 @@ public abstract class LifeBeing implements IRender, IActions{
     private Double height;
     private Double weight;
     private Gender gender;
-    private Integer level;
-    private Status status;
 
     public String getName() { return name; }
 
@@ -42,16 +40,5 @@ public abstract class LifeBeing implements IRender, IActions{
         this.gender = gender;
     }
 
-    public Integer getLevel() {
-        return level;
-    }
-
-    public void setLevel(Integer level) {
-        this.level = level;
-    }
-
-    public Status getStatus() {return status; }
-
-    public void setStatus(Status stats) { this.status = stats; }
 
 }

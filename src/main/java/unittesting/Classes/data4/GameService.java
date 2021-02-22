@@ -47,7 +47,7 @@ public class GameService {
     }
 
     public Status getStatus() {
-        return new Status(100, 0, 1); //ejemplo
+        return new Status(); //ejemplo
     }
 
     public Action getAction() {

@@ -1,5 +1,6 @@
 package unittesting.Classes.data1;
 
+import unittesting.Classes.data2.Status;
 import unittesting.Classes.data3.RenderType;
 
 public class Pokemon extends LifeBeing {
@@ -7,6 +8,8 @@ public class Pokemon extends LifeBeing {
     private PokeType type;
     private PokeType weakness;
     private boolean isLegendary;
+    private Integer level;
+    private Status status;
 
     public Pokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
         setName(name);
@@ -17,8 +20,9 @@ public class Pokemon extends LifeBeing {
         setLegendary(Gender.valueOf(sGender));
         setHeight(height);
         setWeight(weight);
-        setLevel(1);
+        setLevel(getStatus().getLvl());
     }
+
 
     public Integer getPokedexNumber() {
         return pokedexNumber;
@@ -52,6 +56,22 @@ public class Pokemon extends LifeBeing {
         }
     }
 
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = new Status();
+    }
+
     public boolean isLegendary() {
         return isLegendary;
     }
@@ -77,7 +97,7 @@ public class Pokemon extends LifeBeing {
     public void sleep() {
 
     }
-    
+
     @Override
     public String doRender(String renderType) {
 

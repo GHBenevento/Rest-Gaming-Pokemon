@@ -6,10 +6,10 @@ public class Status {
     private Integer xp;
     private Integer lvl;
 
-    public Status(Integer energy, Integer xp, Integer lvl){
-        setEnergy(energy);
-        setXp(xp);
-        setLvl(lvl);
+    public Status(){
+        setEnergy(100);
+        setXp(0);
+        setLvl(1);
     }
 
     public Integer getEnergy() {
