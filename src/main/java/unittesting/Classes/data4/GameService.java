@@ -6,19 +6,20 @@ import unittesting.Classes.data2.Action;
 import unittesting.Classes.data2.Status;
 import unittesting.Classes.data2.UserAction;
 import unittesting.Classes.data3.RenderType;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Service("GameService")
 public class GameService {
-    private List<UserAction> userActions;
+    private List<UserAction> userActions = new ArrayList<>();
     private Integer maxPoints;
     private LifeBeing currentLifeBeing;
 
 
-    public void setUserActions(List<UserAction> userActions) {
-        this.userActions = userActions;
+    public void addAction(UserAction userAction){
+        userActions.add(userAction);
     }
-
     public Integer getMaxPoints() {
         return maxPoints;
     }
@@ -46,7 +47,7 @@ public class GameService {
     }
 
     public Status getStatus() {
-        return new Status();
+        return new Status(100, 0, 1); //ejemplo
     }
 
     public Action getAction() {

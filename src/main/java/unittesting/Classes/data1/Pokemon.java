@@ -61,4 +61,19 @@ public class Pokemon extends LifeBeing {
             isLegendary = true;
         }
     }
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void train() {
+
+    }
+
+    @Override
+    public void sleep() {
+
+    }
 }

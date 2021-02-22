@@ -1,10 +1,18 @@
 package unittesting.Classes.data2;
 
+import unittesting.Classes.data1.Pokemon;
+
 public class Status {
 
     private Integer energy;
     private Integer xp;
     private Integer lvl;
+
+    public Status(Integer energy, Integer xp, Integer lvl){
+        setEnergy(energy);
+        setXp(xp);
+        setLvl(lvl);
+    }
 
     public Integer getEnergy() {
         return energy;
