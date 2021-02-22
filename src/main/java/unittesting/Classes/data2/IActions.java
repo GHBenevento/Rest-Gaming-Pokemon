@@ -1,6 +1,7 @@
 package unittesting.Classes.data2;
 
 
+import unittesting.Classes.data1.PokeType;
 import unittesting.Classes.data1.Pokemon;
 import unittesting.Classes.data3.RenderType;
 
@@ -25,7 +26,7 @@ public interface IActions {
     }
 
     static Pokemon reset() {
-        Pokemon Poke = new Pokemon();
+        Pokemon Poke = new Pokemon("Charmander",7, "FIRE", "MALE", 0.88, 20.5);
         return Poke;
     }
 

@@ -1,10 +1,24 @@
 package unittesting.Classes.data1;
 
+import org.springframework.util.Assert;
+
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;
     private PokeType type;
     private PokeType weakness;
     private boolean isLegendary;
+
+    public Pokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
+        setName(name);
+        setPokedexNumber(pokedexNumber);
+        setType(PokeType.valueOf(sType));
+        setWeakness(PokeType.valueOf(sType));
+        setGender(Gender.valueOf(sGender));
+        setLegendary(Gender.valueOf(sGender));
+        setHeight(height);
+        setWeight(weight);
+        setLevel(1);
+    }
 
     public Integer getPokedexNumber() {
         return pokedexNumber;
@@ -26,7 +40,7 @@ public class Pokemon extends LifeBeing {
         return weakness;
     }
 
-    public PokeType setWeakness() {
+    public PokeType setWeakness(PokeType type) {
 
         switch (type) {
             case FIRE:
@@ -42,7 +56,9 @@ public class Pokemon extends LifeBeing {
         return isLegendary;
     }
 
-    public void setLegendary(String Gender) {
-        isLegendary = Gender.equals("GENDERLESS");
+    public void setLegendary(Gender gender) {
+        if (gender == Gender.GENDERLESS) {
+            isLegendary = true;
+        }
     }
 }
