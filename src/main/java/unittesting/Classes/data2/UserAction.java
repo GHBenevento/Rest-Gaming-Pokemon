@@ -2,9 +2,6 @@ package unittesting.Classes.data2;
 
 import unittesting.Classes.data1.Pokemon;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class UserAction {
     private Pokemon pokemon;
     private Integer currentXp;

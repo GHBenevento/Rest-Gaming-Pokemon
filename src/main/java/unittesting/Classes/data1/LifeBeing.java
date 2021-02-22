@@ -3,7 +3,6 @@ package unittesting.Classes.data1;
 import unittesting.Classes.data2.IActions;
 import unittesting.Classes.data2.Status;
 import unittesting.Classes.data3.IRender;
-import unittesting.Classes.data3.RenderType;
 
 public abstract class LifeBeing implements IRender, IActions{
     private String name;

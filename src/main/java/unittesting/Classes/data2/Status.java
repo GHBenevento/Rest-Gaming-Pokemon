@@ -1,7 +1,5 @@
 package unittesting.Classes.data2;
 
-import unittesting.Classes.data1.Pokemon;
-
 public class Status {
 
     private Integer energy;
