@@ -3,9 +3,7 @@ package unittesting.Classes.data4;
 import org.springframework.stereotype.Service;
 import unittesting.Classes.data1.LifeBeing;
 import unittesting.Classes.data2.Action;
-import unittesting.Classes.data2.Status;
 import unittesting.Classes.data2.UserAction;
-import unittesting.Classes.data3.RenderType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,18 +38,6 @@ public class GameService {
     }
 
     public void resetLifeBeing() {
-    }
-
-    public RenderType render() {
-        return RenderType.HTML; //Es un ejemplo
-    }
-
-    public Status getStatus() {
-        return new Status(); //ejemplo
-    }
-
-    public Action getAction() {
-        return Action.EAT; //Es un ejemplo
     }
 
     public List<UserAction> getUserActions() {

@@ -23,34 +23,4 @@ public class PokemonRestController {
                               @RequestParam(value = "Weight", defaultValue = "6.9")Double weight) {
         return new Pokemon(name, pokeNum, pokeType, gender, height, weight);
     }
-
-
-
-  /*
-
-  @GetMapping("/do/{action}")
-  static String doAction() {
-        return "JSON";
-    }
-
-    @GetMapping("/getStats")
-    static List<UserAction> getStats() {
-        List actionList = new LinkedList();
-        UserAction userAction = new UserAction();
-        actionList.add(userAction);
-        return actionList;
-    }
-
-
-    @GetMapping("/new")
-        Pokemon Poke = new Pokemon("Charmander",7, "FIRE", "MALE", 0.88, 20.5);
-        return Poke;
-    }
-
-    @GetMapping("/getCurrentStatus}")
-    static Status getCurrentStatus() {
-        Status status = new Status();
-        return status;
-    }
-*/
 }

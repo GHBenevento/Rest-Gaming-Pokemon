@@ -1,16 +1,17 @@
 package unittesting.Classes.data1;
 
 import unittesting.Classes.data2.IActions;
-import unittesting.Classes.data2.Status;
 import unittesting.Classes.data3.IRender;
 
-public abstract class LifeBeing implements IRender, IActions{
+public abstract class LifeBeing implements IRender, IActions {
     private String name;
     private Double height;
     private Double weight;
     private Gender gender;
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
