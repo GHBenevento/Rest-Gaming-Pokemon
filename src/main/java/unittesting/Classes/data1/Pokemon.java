@@ -1,6 +1,6 @@
 package unittesting.Classes.data1;
 
-import org.springframework.util.Assert;
+import unittesting.Classes.data3.RenderType;
 
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;
@@ -62,6 +62,7 @@ public class Pokemon extends LifeBeing {
         }
     }
 
+
     @Override
     public void eat() {
 
@@ -74,6 +75,22 @@ public class Pokemon extends LifeBeing {
 
     @Override
     public void sleep() {
+
+    }
+    
+    @Override
+    public String doRender(String renderType) {
+
+        RenderType ourRender = RenderType.valueOf(renderType);
+
+        switch (ourRender) {
+            case HTML:
+                return "";
+            case JSON:
+                return "";
+            default:
+                return "";
+        }
 
     }
 }
