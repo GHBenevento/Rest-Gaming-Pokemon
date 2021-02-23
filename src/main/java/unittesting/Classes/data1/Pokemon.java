@@ -8,6 +8,7 @@ public class Pokemon extends LifeBeing {
     private PokeType type;
     private PokeType weakness;
     private boolean isLegendary;
+    private Status status;
 
     public Pokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
         setName(name);
@@ -15,7 +16,7 @@ public class Pokemon extends LifeBeing {
         setType(PokeType.valueOf(sType));
         setWeakness(PokeType.valueOf(sType));
         setGender(Gender.valueOf(sGender));
-        setLegendary(Gender.valueOf(sGender));
+        isLegendary(Gender.valueOf(sGender));
         setHeight(height);
         setWeight(weight);
     }
@@ -54,19 +55,37 @@ public class Pokemon extends LifeBeing {
         return isLegendary;
     }
 
-    public void setLegendary(Gender gender) {
+    public void isLegendary(Gender gender) {
         if (gender == Gender.GENDERLESS) {
             isLegendary = true;
         }
     }
 
+    public void setLegendary(boolean legendary) {
+        isLegendary = legendary;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     public void eat() {
+        this.status.setEnergy(status.getEnergy()+20);
+        this.status.setXp(status.getXp()-5);
     }
 
     public void train() {
+        this.status.setXp(status.getXp()+50);
+        this.status.setEnergy(status.getEnergy()-40);
     }
 
     public void sleep() {
+        this.status.setEnergy(100);
+        this.status.setXp(status.getXp()-10);
     }
 
     @Override
