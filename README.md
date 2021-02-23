@@ -1,2 +1,2 @@
 # Rest-Gaming-Pokemon
-Team: Georgie H Benevento & Pau Segovia Escandell
+Team: Georgie H. Benevento & Pau Segovia Escandell
