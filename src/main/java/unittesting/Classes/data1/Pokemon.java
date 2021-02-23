@@ -5,9 +5,9 @@ import unittesting.Classes.data3.RenderType;
 
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;
+    private boolean isLegendary;
     private PokeType type;
     private PokeType weakness;
-    private boolean isLegendary;
     private Status status;
 
     public Pokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
@@ -19,8 +19,8 @@ public class Pokemon extends LifeBeing {
         isLegendary(Gender.valueOf(sGender));
         setHeight(height);
         setWeight(weight);
+        setStatus(status);
     }
-
 
     public Integer getPokedexNumber() {
         return pokedexNumber;
@@ -48,11 +48,16 @@ public class Pokemon extends LifeBeing {
             case WATER -> PokeType.GRASS;
             default -> PokeType.WATER;
         };
-        return  weakness;
+        return weakness;
     }
 
     public boolean isLegendary() {
         return isLegendary;
+    }
+
+
+    public void setLegendary(boolean legendary) {
+        isLegendary = legendary;
     }
 
     public void isLegendary(Gender gender) {
@@ -61,31 +66,28 @@ public class Pokemon extends LifeBeing {
         }
     }
 
-    public void setLegendary(boolean legendary) {
-        isLegendary = legendary;
-    }
-
     public Status getStatus() {
         return status;
     }
 
     public void setStatus(Status status) {
-        this.status = status;
+        this.status = new Status();
     }
 
     public void eat() {
-        this.status.setEnergy(status.getEnergy()+20);
-        this.status.setXp(status.getXp()-5);
+        this.status.setHunger(status.getHunger() - 20);
+        this.status.setEnergy(status.getEnergy()- 10);
     }
 
     public void train() {
-        this.status.setXp(status.getXp()+50);
-        this.status.setEnergy(status.getEnergy()-40);
+        this.status.setXp(status.getXp() + 50);
+        this.status.setEnergy(status.getEnergy() - 40);
+        this.status.setHunger(status.getHunger() + 40);
     }
 
     public void sleep() {
         this.status.setEnergy(100);
-        this.status.setXp(status.getXp()-10);
+        this.status.setHunger(status.getHunger() + 15);
     }
 
     @Override
