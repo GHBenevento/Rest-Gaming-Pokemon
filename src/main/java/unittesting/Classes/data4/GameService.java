@@ -15,7 +15,6 @@ public class GameService {
     public static Integer maxPoints;
     public static LifeBeing currentLifeBeing;
 
-
     public void addAction(UserAction userAction){
         userActions.add(userAction);
     }
@@ -40,6 +39,7 @@ public class GameService {
 
     public Pokemon newPokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight){
         Pokemon newPoke = new Pokemon(name, pokedexNumber, sType, sGender, height, weight);
+        this.setCurrentLifeBeing(newPoke);
         return newPoke;
     }
 

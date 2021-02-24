@@ -2,13 +2,14 @@ package unittesting.Classes.data1;
 
 import unittesting.Classes.data2.Status;
 import unittesting.Classes.data3.RenderType;
+import unittesting.Classes.data4.GameService;
 
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;
     private boolean isLegendary;
     private PokeType type;
     private PokeType weakness;
-    private Status status;
+
 
     public Pokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
         setName(name);
@@ -20,7 +21,6 @@ public class Pokemon extends LifeBeing {
         setHeight(height);
         setWeight(weight);
         setStatus(status);
-        LifeBeing.setOurPokemon(this);
     }
 
     public Integer getPokedexNumber() {
@@ -64,14 +64,6 @@ public class Pokemon extends LifeBeing {
         if (gender == Gender.GENDERLESS) {
             isLegendary = true;
         }
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = new Status();
     }
 
     public void eat() {

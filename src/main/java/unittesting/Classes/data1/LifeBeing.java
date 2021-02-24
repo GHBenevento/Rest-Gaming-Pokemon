@@ -1,6 +1,7 @@
 package unittesting.Classes.data1;
 
 import unittesting.Classes.data2.IActions;
+import unittesting.Classes.data2.Status;
 import unittesting.Classes.data3.IRender;
 
 public abstract class LifeBeing implements IRender, IActions {
@@ -8,7 +9,7 @@ public abstract class LifeBeing implements IRender, IActions {
     private Double height;
     private Double weight;
     private Gender gender;
-    static Pokemon ourPokemon;
+    public Status status;
 
     public String getName() {
         return name;
@@ -42,11 +43,11 @@ public abstract class LifeBeing implements IRender, IActions {
         this.gender = gender;
     }
 
-    public static Pokemon getOurPokemon() {
-        return ourPokemon;
+    public Status getStatus() {
+        return status;
     }
 
-    public static void setOurPokemon(Pokemon ourPokemon) {
-        LifeBeing.ourPokemon = ourPokemon;
+    public void setStatus(Status status) {
+        this.status = new Status();
     }
 }
