@@ -22,6 +22,6 @@ public class PokemonRestController {
                               @RequestParam(value = "Gender", defaultValue = "FEMALE")String gender,
                               @RequestParam(value = "Height", defaultValue = "71")Double height,
                               @RequestParam(value = "Weight", defaultValue = "6.9")Double weight) {
-        return ;
+        return new Pokemon(name, pokeNum, pokeType, gender, height, weight);
     }
 }
