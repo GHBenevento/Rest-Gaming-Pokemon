@@ -8,6 +8,7 @@ public abstract class LifeBeing implements IRender, IActions {
     private Double height;
     private Double weight;
     private Gender gender;
+    static Pokemon ourPokemon;
 
     public String getName() {
         return name;
@@ -41,5 +42,11 @@ public abstract class LifeBeing implements IRender, IActions {
         this.gender = gender;
     }
 
+    public static Pokemon getOurPokemon() {
+        return ourPokemon;
+    }
 
+    public static void setOurPokemon(Pokemon ourPokemon) {
+        LifeBeing.ourPokemon = ourPokemon;
+    }
 }

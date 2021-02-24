@@ -58,7 +58,6 @@ public class Status {
             this.hunger = hunger;
         }
         if(hunger == 100){
-            //Pokemon.reset();
         }
     }
 

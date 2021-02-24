@@ -14,6 +14,7 @@ public class PokemonRestController {
     public String doRender(@RequestParam(value = "Render", defaultValue = "HTML")String renderType) {
         return doRender(renderType);
     }
+
     @GetMapping("/new")
     public Pokemon newPokemon(@RequestParam(value = "Name", defaultValue = "Bulbasaur")String name,
                               @RequestParam(value = "Pokedex Number", defaultValue = "1")Integer pokeNum,
@@ -21,6 +22,6 @@ public class PokemonRestController {
                               @RequestParam(value = "Gender", defaultValue = "FEMALE")String gender,
                               @RequestParam(value = "Height", defaultValue = "71")Double height,
                               @RequestParam(value = "Weight", defaultValue = "6.9")Double weight) {
-        return new Pokemon(name, pokeNum, pokeType, gender, height, weight);
+        return ;
     }
 }

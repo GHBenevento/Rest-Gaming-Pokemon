@@ -20,6 +20,7 @@ public class Pokemon extends LifeBeing {
         setHeight(height);
         setWeight(weight);
         setStatus(status);
+        LifeBeing.setOurPokemon(this);
     }
 
     public Integer getPokedexNumber() {
@@ -42,13 +43,12 @@ public class Pokemon extends LifeBeing {
         return weakness;
     }
 
-    public PokeType setWeakness(PokeType type) {
+    public void setWeakness(PokeType type) {
         weakness = switch (type) {
             case GRASS -> PokeType.FIRE;
             case WATER -> PokeType.GRASS;
             default -> PokeType.WATER;
         };
-        return weakness;
     }
 
     public boolean isLegendary() {
@@ -95,14 +95,11 @@ public class Pokemon extends LifeBeing {
 
         RenderType ourRender = RenderType.valueOf(renderType);
 
-        switch (ourRender) {
-            case HTML:
-                return "";
-            case JSON:
-                return "";
-            default:
-                return "";
-        }
+        return switch (ourRender) {
+            case HTML -> "";
+            case JSON -> "";
+            default -> "";
+        };
 
     }
 }
