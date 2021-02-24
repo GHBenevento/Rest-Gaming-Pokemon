@@ -1,4 +1,4 @@
-package unittesting.classes.poke_data;
+package unittesting.classes.data;
 
 import unittesting.classes.actions.IActions;
 import unittesting.classes.render.IRender;

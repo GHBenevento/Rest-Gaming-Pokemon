@@ -1,10 +1,10 @@
 package unittesting.classes.service;
 
 import org.springframework.stereotype.Service;
-import unittesting.classes.poke_data.LifeBeing;
+import unittesting.classes.data.LifeBeing;
 import unittesting.classes.poke_data.Pokemon;
 import unittesting.classes.actions.Action;
-import unittesting.classes.poke_data.Status;
+import unittesting.classes.data.Status;
 import unittesting.classes.actions.UserAction;
 
 import java.util.ArrayList;
@@ -16,9 +16,10 @@ public class GameService {
     public static Integer maxPoints;
     public static LifeBeing currentLifeBeing;
 
-    public void addAction(UserAction userAction){
+    public void addAction(UserAction userAction) {
         userActions.add(userAction);
     }
+
     public Integer getMaxPoints() {
         return maxPoints;
     }
@@ -36,7 +37,7 @@ public class GameService {
     }
 
 
-    public Pokemon newPokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight){
+    public Pokemon newPokemon(String name, Integer pokedexNumber, String sType, String sGender, Double height, Double weight) {
         Pokemon newPoke = new Pokemon(name, pokedexNumber, sType, sGender, height, weight);
         this.setCurrentLifeBeing(newPoke);
         return newPoke;
@@ -49,11 +50,11 @@ public class GameService {
         currentLifeBeing.doRender(renderType);
     }
 
-    public Status getStatus(){
-       return currentLifeBeing.status;
+    public Status getStatus() {
+        return currentLifeBeing.status;
     }
 
-    public List<Action> getActions(){
+    public List<Action> getActions() {
         List<Action> possibleActions = new ArrayList<>();
         return possibleActions;
     }
@@ -61,5 +62,6 @@ public class GameService {
     public List<UserAction> getUserActions() {
         return userActions;
     }
+
 
 }

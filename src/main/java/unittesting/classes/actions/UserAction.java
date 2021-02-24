@@ -1,7 +1,6 @@
 package unittesting.classes.actions;
 
-import unittesting.classes.poke_data.LifeBeing;
-import unittesting.classes.poke_data.Pokemon;
+import unittesting.classes.data.LifeBeing;
 import unittesting.classes.service.GameService;
 
 public class UserAction {

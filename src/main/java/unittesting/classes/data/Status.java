@@ -1,4 +1,4 @@
-package unittesting.classes.poke_data;
+package unittesting.classes.data;
 
 public class Status {
 
@@ -7,11 +7,11 @@ public class Status {
     private Integer xp;
     private Integer lvl;
 
-    public Status(){
+    public Status() {
         setEnergy(100);
+        setHunger(0);
         setXp(0);
         setLvl(1);
-        setHunger(0);
     }
 
     public Integer getEnergy() {
@@ -19,10 +19,10 @@ public class Status {
     }
 
     public void setEnergy(Integer energy) {
-        if(energy >= 100){
-            this.energy= 100;
-        }else{
-        this.energy = energy;
+        if (energy >= 100) {
+            this.energy = 100;
+        } else {
+            this.energy = energy;
         }
     }
 
@@ -31,8 +31,8 @@ public class Status {
     }
 
     public void setXp(Integer xp) {
-        if(xp == 150){
-            this.setLvl(this.getLvl()+1);
+        if (xp == 150) {
+            this.setLvl(this.getLvl() + 1);
         }
         this.xp = xp;
     }
@@ -50,12 +50,13 @@ public class Status {
     }
 
     public void setHunger(Integer hunger) {
-        if(hunger <= 0){
-            this.hunger=0;
-        }else{
+        if (hunger <= 0) {
+            this.hunger = 0;
+        } else {
             this.hunger = hunger;
         }
-        if(hunger == 100){
+        if (hunger >= 100) {
+            //reset
         }
     }
 

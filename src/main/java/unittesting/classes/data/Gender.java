@@ -1,4 +1,4 @@
-package unittesting.classes.poke_data;
+package unittesting.classes.data;
 
 public enum Gender {
     GENDERLESS,
