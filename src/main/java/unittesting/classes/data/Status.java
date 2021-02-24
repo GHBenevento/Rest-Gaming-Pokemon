@@ -33,8 +33,10 @@ public class Status {
     public void setXp(Integer xp) {
         if (xp == 150) {
             this.setLvl(this.getLvl() + 1);
+            this.setXp(0);
+        }else {
+            this.xp = xp;
         }
-        this.xp = xp;
     }
 
     public Integer getLvl() {

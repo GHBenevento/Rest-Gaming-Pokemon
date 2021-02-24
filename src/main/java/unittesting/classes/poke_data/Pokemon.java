@@ -1,7 +1,8 @@
 package unittesting.classes.poke_data;
 
 import unittesting.classes.actions.UserAction;
-import unittesting.classes.render.RenderType;
+import unittesting.classes.data.Gender;
+import unittesting.classes.data.LifeBeing;
 
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;
@@ -66,22 +67,30 @@ public class Pokemon extends LifeBeing {
     }
 
     public void eat() {
-        this.status.setHunger(status.getHunger() - 20);
-        this.status.setEnergy(status.getEnergy()- 10);
-        new UserAction(0);
+        if( status.getEnergy() <= 9){
+            System.out.println("Not enough energy, you need to sleep");
+        }else {
+            this.status.setHunger(status.getHunger() - 20);
+            this.status.setEnergy(status.getEnergy() - 10);
+            //new UserAction(0);
+        }
     }
 
     public void train() {
-        this.status.setXp(status.getXp() + 50);
-        this.status.setEnergy(status.getEnergy() - 40);
-        this.status.setHunger(status.getHunger() + 40);
-        new UserAction(50);
+        if( status.getEnergy() <= 39){
+            System.out.println("Not enough energy, you need to sleep");
+        }else {
+            this.status.setXp(status.getXp() + 50);
+            this.status.setEnergy(status.getEnergy() - 40);
+            this.status.setHunger(status.getHunger() + 40);
+            //new UserAction(50);
+        }
     }
 
     public void sleep() {
         this.status.setEnergy(100);
         this.status.setHunger(status.getHunger() + 15);
-        new UserAction(0);
+        //new UserAction(0);
     }
 
 }

@@ -5,7 +5,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 import unittesting.classes.poke_data.PokeType;
 import unittesting.classes.poke_data.Pokemon;
-import unittesting.classes.service.GameService;
 
 @SpringBootTest
 public class PokemonTests {
