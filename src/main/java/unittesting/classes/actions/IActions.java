@@ -1,4 +1,4 @@
-package unittesting.Classes.actions;
+package unittesting.classes.actions;
 
 public interface IActions {
 

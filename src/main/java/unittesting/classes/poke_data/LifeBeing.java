@@ -1,7 +1,7 @@
-package unittesting.Classes.poke_data;
+package unittesting.classes.poke_data;
 
-import unittesting.Classes.actions.IActions;
-import unittesting.Classes.render.IRender;
+import unittesting.classes.actions.IActions;
+import unittesting.classes.render.IRender;
 
 public abstract class LifeBeing implements IRender, IActions {
     private String name;

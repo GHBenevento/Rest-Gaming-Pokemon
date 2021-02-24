@@ -1,4 +1,4 @@
-package unittesting.Classes.poke_data;
+package unittesting.classes.poke_data;
 
 public class Status {
 

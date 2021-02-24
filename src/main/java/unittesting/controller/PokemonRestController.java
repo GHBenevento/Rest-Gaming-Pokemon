@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import unittesting.Classes.poke_data.Pokemon;
-import unittesting.Classes.service.GameService;
+import unittesting.classes.poke_data.Pokemon;
+import unittesting.classes.service.GameService;
 
 @RestController
 @RequestMapping("/rest")

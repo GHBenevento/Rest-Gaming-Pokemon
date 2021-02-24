@@ -1,11 +1,11 @@
-package unittesting.Classes.service;
+package unittesting.classes.service;
 
 import org.springframework.stereotype.Service;
-import unittesting.Classes.poke_data.LifeBeing;
-import unittesting.Classes.poke_data.Pokemon;
-import unittesting.Classes.actions.Action;
-import unittesting.Classes.poke_data.Status;
-import unittesting.Classes.actions.UserAction;
+import unittesting.classes.poke_data.LifeBeing;
+import unittesting.classes.poke_data.Pokemon;
+import unittesting.classes.actions.Action;
+import unittesting.classes.poke_data.Status;
+import unittesting.classes.actions.UserAction;
 
 import java.util.ArrayList;
 import java.util.List;

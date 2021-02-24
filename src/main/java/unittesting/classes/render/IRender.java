@@ -1,4 +1,4 @@
-package unittesting.Classes.render;
+package unittesting.classes.render;
 
 public interface IRender {
     String doRender(String renderType);
