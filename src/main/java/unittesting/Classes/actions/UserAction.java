@@ -1,6 +1,6 @@
-package unittesting.Classes.data2;
+package unittesting.Classes.actions;
 
-import unittesting.Classes.data1.Pokemon;
+import unittesting.Classes.poke_data.Pokemon;
 
 public class UserAction {
     private Pokemon pokemon;

@@ -1,15 +1,14 @@
-package unittesting.Classes.data4;
+package unittesting.Classes.service;
 
 import org.springframework.stereotype.Service;
-import unittesting.Classes.data1.LifeBeing;
-import unittesting.Classes.data1.Pokemon;
-import unittesting.Classes.data2.Action;
-import unittesting.Classes.data2.Status;
-import unittesting.Classes.data2.UserAction;
+import unittesting.Classes.poke_data.LifeBeing;
+import unittesting.Classes.poke_data.Pokemon;
+import unittesting.Classes.actions.Action;
+import unittesting.Classes.poke_data.Status;
+import unittesting.Classes.actions.UserAction;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 @Service("GameService")
 public class GameService {

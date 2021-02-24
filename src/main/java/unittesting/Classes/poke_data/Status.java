@@ -1,6 +1,4 @@
-package unittesting.Classes.data2;
-
-import unittesting.Classes.data1.Pokemon;
+package unittesting.Classes.poke_data;
 
 public class Status {
 

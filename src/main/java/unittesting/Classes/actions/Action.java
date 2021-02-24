@@ -1,4 +1,4 @@
-package unittesting.Classes.data2;
+package unittesting.Classes.actions;
 
 public enum Action {
     EAT, TRAIN, SLEEP

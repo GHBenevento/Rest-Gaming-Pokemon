@@ -1,4 +1,4 @@
-package unittesting.Classes.data1;
+package unittesting.Classes.poke_data;
 
 public enum PokeType {
     GRASS,

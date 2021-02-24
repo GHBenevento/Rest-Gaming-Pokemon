@@ -1,8 +1,6 @@
-package unittesting.Classes.data1;
+package unittesting.Classes.poke_data;
 
-import unittesting.Classes.data2.Status;
-import unittesting.Classes.data3.RenderType;
-import unittesting.Classes.data4.GameService;
+import unittesting.Classes.render.RenderType;
 
 public class Pokemon extends LifeBeing {
     private Integer pokedexNumber;

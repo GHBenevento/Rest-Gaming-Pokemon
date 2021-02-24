@@ -1,4 +1,4 @@
-package unittesting.Classes.data3;
+package unittesting.Classes.render;
 
 public enum RenderType {
     CONSOLE,

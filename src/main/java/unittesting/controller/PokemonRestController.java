@@ -1,11 +1,11 @@
-package unittesting.Controller;
+package unittesting.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import unittesting.Classes.data1.Pokemon;
-import unittesting.Classes.data4.GameService;
+import unittesting.Classes.poke_data.Pokemon;
+import unittesting.Classes.service.GameService;
 
 @RestController
 @RequestMapping("/rest")
