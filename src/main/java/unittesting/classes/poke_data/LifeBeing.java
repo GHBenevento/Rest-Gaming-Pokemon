@@ -2,6 +2,7 @@ package unittesting.classes.poke_data;
 
 import unittesting.classes.actions.IActions;
 import unittesting.classes.render.IRender;
+import unittesting.classes.render.RenderType;
 
 public abstract class LifeBeing implements IRender, IActions {
     private String name;
@@ -48,5 +49,18 @@ public abstract class LifeBeing implements IRender, IActions {
 
     public void setStatus(Status status) {
         this.status = new Status();
+    }
+
+    @Override
+    public String doRender(String renderType) {
+
+        RenderType ourRender = RenderType.valueOf(renderType);
+
+        return switch (ourRender) {
+            case HTML -> "";
+            case JSON -> "";
+            default -> "";
+        };
+
     }
 }
