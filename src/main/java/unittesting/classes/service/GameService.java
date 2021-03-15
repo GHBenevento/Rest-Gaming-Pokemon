@@ -13,7 +13,7 @@ import java.util.List;
 @Service("GameService")
 public class GameService {
     public static List<UserAction> userActions = new ArrayList<>();
-    public static Integer maxPoints;
+    public static Integer maxPoints = 1;
     public static LifeBeing currentLifeBeing;
 
     public void addAction(UserAction userAction) {
@@ -24,8 +24,10 @@ public class GameService {
         return maxPoints;
     }
 
-    public void setMaxPoints(Integer maxPoints) {
-        this.maxPoints = maxPoints;
+    public static void setMaxPoints(Integer points) {
+        if (points >= maxPoints) {
+            maxPoints = points;
+        }
     }
 
     public LifeBeing getCurrentLifeBeing() {
@@ -44,6 +46,13 @@ public class GameService {
     }
 
     public void doAction(Action action) {
+        if (action == Action.EAT) {
+            currentLifeBeing.eat();
+        } else if (action == Action.TRAIN) {
+            currentLifeBeing.train();
+        } else {
+            currentLifeBeing.sleep();
+        }
     }
 
     public void render(String renderType) {

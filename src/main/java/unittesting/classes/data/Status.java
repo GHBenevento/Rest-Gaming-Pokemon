@@ -1,5 +1,7 @@
 package unittesting.classes.data;
 
+import unittesting.classes.service.GameService;
+
 public class Status {
 
     private Integer energy;
@@ -34,6 +36,7 @@ public class Status {
         if (xp == 150) {
             this.setLvl(this.getLvl() + 1);
             this.setXp(0);
+            GameService.setMaxPoints(lvl);
         }else {
             this.xp = xp;
         }

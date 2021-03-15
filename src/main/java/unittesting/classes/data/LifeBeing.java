@@ -51,7 +51,6 @@ public abstract class LifeBeing implements IRender, IActions {
         this.status = new Status();
     }
 
-    @Override
     public String doRender(String renderType) {
 
         RenderType ourRender = RenderType.valueOf(renderType);
